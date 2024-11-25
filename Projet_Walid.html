@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect engineering</title>
+    <link rel="icon" href="/Images/Perfect engineering/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container2">
+        <header>
+            <div class="info">
+                <p>E-mail: <a href="mailto:oberraies@gmail.com">oberraies@gmail.com</a></p>
+                <p>Tél : (+216) 99 44 28 79</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/oussama-berraies/" target="_blank">Mon Profil</a></p>
+            </div>
+            <div class="banner2">
+                <h1>Berraies Oussama - <span class="small-text">Outil d'audit énergétique - vérification de saisie et export</span></h1>
+                <img src="/Images/Perfect engineering/Logo.png" alt="Logo" class="banner-logo2">
+            </div>
+        </header>
+        <section class="Contexte">
+            <h2>Conexte</h2>
+            <ul class="arrow-list">
+                <li>Import des fiches d'interventions et vérification de saisie.</li>
+                <li>Export des différentes données.</li>
+                <li>Actualisation et calcul des différents KPI.</li>
+                <li>Génération des rapports d'audit par commune.</li>
+                <li>Génération des rapports d'audit par gouvernerat.</li>
+            </ul>
+        </section>
+        <section class="Contexte-images">
+            <div class="Contexte-image-containter">
+                <img src="/Images/Perfect engineering/Interface.png" alt="image1" class="contexte-image-item single-image" onclick="openModal(this.src)">
+            </div>
+            <div class="image-row">
+                <img src="/Images/Perfect engineering/Calcul 1.png" alt="image2" class="contexte-image-item" onclick="openModal(this.src)">
+                <img src="/Images/Perfect engineering/Calcul 2.png" alt="image3" class="contexte-image-item" onclick="openModal(this.src)">
+            </div>
+        </section>
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage" alt="Aperçu de l'image">
+        </div>
+    </div>  
+</body>
+</html>

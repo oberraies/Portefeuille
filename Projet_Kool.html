@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Kool</title>
+    <link rel="icon" href="/Images/Kool/kool.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container2">
+        <header>
+            <div class="info">
+                <p>E-mail: <a href="mailto:oberraies@gmail.com">oberraies@gmail.com</a></p>
+                <p>Tél : (+216) 99 44 28 79</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/oussama-berraies/" target="_blank">Mon Profil</a></p>
+            </div>
+            <div class="banner2">
+                <h1>Berraies Oussama - <span class="small-text">Extraction des données et facturation</span></h1>
+                <img src="/Images/Kool/kool.png" alt="Logo" class="banner-logo">
+            </div>
+        </header>
+        <section class="Contexte">
+            <h2>Conexte</h2>
+            <ul class="arrow-list">
+                <li>Suite à des modifications des données brutes et de la structure du fichier, certaines fonctions sont cassées, 
+                    l'extraction des données ne se fait plus en fonction de la période choisie.. 
+                    créant ainsi un blocage et une impossibilité à générer les factures en attente depuis quelques temps.
+                </li>
+                <li>Le fichier étant gourmand en formules, une multitude de cellules liées, et les données mal structurées
+                    augmentant ainsi le temps d'exécution du processus de génération des factures.
+                </li>
+            </ul>
+        </section>
+        <section class="Contexte-images">
+            <div class="image-row">
+                <img src="/Images/Kool/problème1.png" alt="image2" class="contexte-image-item" onclick="openModal(this.src)">
+                <img src="/Images/Kool/Problème2.png" alt="image3" class="contexte-image-item" onclick="openModal(this.src)">
+            </div>
+        </section>
+        
+        <section class="action">
+            <h2>Actions effectuées</h2>
+            <ul class="arrow-list">
+                <li>Correction des données brutes et de la structure du fichier.</li>
+                <li>Création d'une structure de données plus optimale pour l'extraction des données.</li>
+                <li>Création d'un code VBA optimisé permettant l'extraction des données selon la période indiquée.</li>
+                <li>Modification du code de génération des factures automatique.</li>
+            </ul>
+        </section>
+        <section class="Contexte-images">
+            <div class="image-row">
+                <img src="/Images/Kool/Solution 1.png" alt="image2" class="contexte-image-item" onclick="openModal(this.src)">
+                <img src="/Images/Kool/Solution 2.png" alt="image3" class="contexte-image-item" onclick="openModal(this.src)">
+            </div>
+        </section>
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <img class="modal-content" id="modalImage" alt="Aperçu de l'image">
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </div>
+</body>
+</html>
